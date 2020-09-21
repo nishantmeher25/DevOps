@@ -16,7 +16,11 @@ az webapp log tail --name contosofashions10864 --resource-group learn-c0c2f0a9-9
 
 #curl 
 #curl -u {username} https://{sitename}.scm.azurewebsites.net/api/logstream
-curl -u { username } https:// { sitename }.scm.azurewebsites.net/api/logstream
+curl -u nmeher https://contosofashions10864.scm.azurewebsites.net/api/logstream
+
+#download log files
+# az webapp log download --log-file \<_filename_\>.zip  --resource-group \<_resource group name_\> --name \<_app name_\>
+az webapp log download --log-file \<_filename_\>.zip  --resource-group \<_resource group name_\> --name \<_app name_\>
 
 
 
